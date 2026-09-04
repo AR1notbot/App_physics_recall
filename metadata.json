@@ -1,0 +1,6 @@
+{
+  "name": "Тест з фізики: 10 тем",
+  "description": "Тестування знань з фізики: 10 тем по 20 задач з вибіркою 5 випадкових завдань та ручним введенням розрахункової числової відповіді без варіантів.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
