@@ -35,11 +35,10 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     find: 'F_тяж',
     unit: 'Н',
     expectedAnswer: 686,
-    acceptableAlternatives: [700],
     formula: 'F = m · g',
     solutionSteps: [
       'Сила тяжіння обчислюється як F = m · g.',
-      'F = 70 кг · 9.8 м/с² = 686 Н (при g = 10 м/с²: 700 Н).',
+      'F = 70 кг · 9.8 м/с² = 686 Н.',
     ],
     hint: 'Помножте масу на прискорення вільного падіння g.',
     difficulty: 'базовий',
@@ -49,7 +48,7 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'dynamics',
     numberInTopic: 3,
     title: 'Закон Гука (жорсткість пружини)',
-    question: 'Під дією сили 40 Н пружина видовжилася на 8 см. Чому дорівнює коефіцієнт жорсткості пружини в Н/м?',
+    question: 'Під дією сталої сили 40 Н пружина в межах пружної деформації видовжилася у стані рівноваги на 8 см. Чому дорівнює коефіцієнт жорсткості пружини в Н/м?',
     given: [
       { label: 'F', value: '40 Н' },
       { label: 'x', value: '8 см = 0.08 м' },
@@ -70,7 +69,7 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'dynamics',
     numberInTopic: 4,
     title: 'Сила тертя ковзання',
-    question: 'Брусок масою 5 кг рухається горизонтальною поверхнею. Коефіцієнт тертя μ = 0.2. Яка сила тертя діє на брусок? (Вважайте g = 10 м/с²).',
+    question: 'Брусок масою 5 кг рухається горизонтальною поверхнею. Інших сил із вертикальними складовими немає. Коефіцієнт тертя ковзання μ = 0.2. Яка сила тертя діє на брусок? (Вважайте g = 10 м/с²).',
     given: [
       { label: 'm', value: '5 кг' },
       { label: 'μ', value: '0.2' },
@@ -79,10 +78,9 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     find: 'F_тертя',
     unit: 'Н',
     expectedAnswer: 10,
-    acceptableAlternatives: [9.8],
     formula: 'F_тертя = μ · m · g',
     solutionSteps: [
-      'Сила нормального тиску N = m · g = 5 · 10 = 50 Н.',
+      'Модуль сили нормальної реакції опори N = m · g = 5 · 10 = 50 Н.',
       'Сила тертя: F_тертя = μ · N = 0.2 · 50 = 10 Н.',
     ],
     hint: 'Сила тертя дорівнює μ * N, де на горизонталі N = m*g.',
@@ -124,13 +122,12 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     find: 'P',
     unit: 'Н',
     expectedAnswer: 720,
-    acceptableAlternatives: [708],
     formula: 'P = m · (g + a)',
     solutionSteps: [
       'При прискоренні вгору виникає перевантаження: P = m(g + a).',
       'P = 60 · (10 + 2) = 60 · 12 = 720 Н.',
     ],
-    hint: 'При русі вгору з прискоренням сили додаються: P = m(g + a).',
+    hint: 'Запишіть другий закон Ньютона для сил тяжіння та реакції підлоги: N − mg = ma, P = N.',
     difficulty: 'середній',
   },
   {
@@ -147,7 +144,6 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     find: 'P',
     unit: 'Н',
     expectedAnswer: 600,
-    acceptableAlternatives: [584],
     formula: 'P = m · (g - a)',
     solutionSteps: [
       'При прискоренні вниз вага зменшується: P = m(g - a).',
@@ -161,7 +157,7 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'dynamics',
     numberInTopic: 8,
     title: 'Сила тяги автомобіля',
-    question: 'Автомобіль масою 1000 кг рухається рівноприскорено з прискоренням 1.5 м/с². Сила опору рухові дорівнює 500 Н. Чому дорівнює сила тяги двигуна?',
+    question: 'Автомобіль масою 1000 кг розганяється прямолінійно на горизонтальній дорозі з прискоренням 1.5 м/с². Сила опору рухові дорівнює 500 Н. Чому дорівнює сила тяги двигуна?',
     given: [
       { label: 'm', value: '1000 кг' },
       { label: 'a', value: '1.5 м/с²' },
@@ -183,22 +179,21 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'dynamics',
     numberInTopic: 9,
     title: 'Гравітаційна сила між двома кулями',
-    question: 'Дві кулі масами по 1000 кг кожна знаходяться на відстані 1 м одна від одної. Яка сила їхнього гравітаційного притягання (помножена на 10¹¹ для зручності введення числа, тобто значення в одиницях 10⁻¹¹ Н)? (G = 6.67 × 10⁻¹¹ Н·м²/кг²).',
+    question: 'Дві однорідні кулі масами по 1000 кг кожна не перекриваються; відстань між їхніми центрами становить 1 м. Яка сила їхнього гравітаційного притягання (помножена на 10¹¹ для зручності введення числа, тобто значення в одиницях 10⁻¹¹ Н)? (G = 6.67 × 10⁻¹¹ Н·м²/кг²).',
     given: [
       { label: 'm₁ = m₂', value: '1000 кг' },
       { label: 'r', value: '1 м' },
-      { label: 'G', value: '6.67 × 10⁻¹¹' },
+      { label: 'G', value: '6.67 × 10⁻¹¹ Н·м²/кг²' },
     ],
-    find: 'F × 10¹¹',
+    find: 'F',
     unit: '×10⁻¹¹ Н',
     expectedAnswer: 6670000,
-    acceptableAlternatives: [6.67e6],
     formula: 'F = G · m₁ · m₂ / r²',
     solutionSteps: [
       'F = 6.67 × 10⁻¹¹ · 1000 · 1000 / 1² = 6.67 × 10⁻¹¹ · 10⁶ = 6.67 × 10⁻⁵ Н = 6 670 000 × 10⁻¹¹ Н.',
     ],
     hint: 'Закон всесвітнього тяжіння Ньютона: F = G*m₁*m₂/r².',
-    difficulty: 'підвищений',
+    difficulty: 'середній',
   },
   {
     id: 'dyn_10',
@@ -236,7 +231,6 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     find: 'a',
     unit: 'м/с²',
     expectedAnswer: 5,
-    acceptableAlternatives: [4.9],
     formula: 'a = g · sin α',
     solutionSteps: [
       'Без тертя на тіло вздовж площини діє складова сили тяжіння: F = m · g · sin α.',
@@ -249,7 +243,7 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     id: 'dyn_12',
     topicId: 'dynamics',
     numberInTopic: 12,
-    title: 'Сила натягу нитки під час підйому',
+    title: 'Сила натягу троса під час підйому',
     question: 'Вантаж масою 10 кг піднімають на тросі вертикально вгору з прискоренням 3 м/с². Чому дорівнює сила натягу троса? (g = 10 м/с²).',
     given: [
       { label: 'm', value: '10 кг' },
@@ -259,13 +253,12 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     find: 'T',
     unit: 'Н',
     expectedAnswer: 130,
-    acceptableAlternatives: [128],
     formula: 'T = m · (g + a)',
     solutionSteps: [
       'Рівняння руху: T - m·g = m·a.',
       'T = m·(g + a) = 10 · (10 + 3) = 10 · 13 = 130 Н.',
     ],
-    hint: 'Трос повинен утримувати вагу вантажу і створювати прискорення вгору: T = m(g + a).',
+    hint: 'Натяг троса має перевищувати силу тяжіння: T = m(g + a).',
     difficulty: 'середній',
   },
   {
@@ -273,7 +266,7 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'dynamics',
     numberInTopic: 13,
     title: 'Видовження пружини маятника',
-    question: 'До вертикальної пружини жорсткістю 200 Н/м підвісили тягарець масою 0.6 кг. На скільки сантиметрів видовжиться пружина у стані рівноваги? (g = 10 м/с²).',
+    question: 'До вертикальної невагомої пружини жорсткістю 200 Н/м підвісили тягарець масою 0.6 кг. На скільки сантиметрів видовжиться пружина у стані рівноваги? (g = 10 м/с²).',
     given: [
       { label: 'k', value: '200 Н/м' },
       { label: 'm', value: '0.6 кг' },
@@ -282,7 +275,6 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     find: 'x',
     unit: 'см',
     expectedAnswer: 3,
-    acceptableAlternatives: [2.94],
     formula: 'x = m · g / k',
     solutionSteps: [
       'У рівновазі сила пружності дорівнює силі тяжіння: k · x = m · g.',
@@ -304,11 +296,9 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     find: 'v₁',
     unit: 'км/с',
     expectedAnswer: 8,
-    acceptableAlternatives: [7.9, 7.91],
     formula: 'v₁ = √(g · R)',
     solutionSteps: [
       'v₁ = √(10 · 6.4 · 10⁶) = √64 000 000 = 8000 м/с = 8 км/с.',
-      '(При g = 9.8 м/с² отримуємо ≈ 7.9 км/с).',
     ],
     hint: 'Перша космічна швидкість: v = √(g * R). Переведіть результат у км/с.',
     difficulty: 'середній',
@@ -317,7 +307,7 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     id: 'dyn_15',
     topicId: 'dynamics',
     numberInTopic: 15,
-    title: 'Сила тиску на випуклий міст',
+    title: 'Сила тиску на опуклий міст',
     question: 'Автомобіль масою 1200 кг рухається опуклим мостом радіусом кривизни 50 м зі швидкістю 10 м/с. Яка сила тиску автомобіля на міст у верхній точці? (g = 10 м/с²).',
     given: [
       { label: 'm', value: '1200 кг' },
@@ -333,7 +323,7 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
       'У верхній точці опуклого моста: m·g - N = m · v² / R.',
       'N = m · (g - v² / R) = 1200 · (10 - 100 / 50) = 1200 · (10 - 2) = 1200 · 8 = 9600 Н.',
     ],
-    hint: 'Доцентрове прискорення зменшує вагу: N = m*(g - v²/R).',
+    hint: 'У верхній точці результуюча сила спрямована донизу: N = m*(g - v²/R).',
     difficulty: 'середній',
   },
   {
@@ -341,7 +331,7 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'dynamics',
     numberInTopic: 16,
     title: 'Зміна швидкості під дією імпульсу сили',
-    question: 'На нерухоме тіло масою 5 кг протягом 4 секунд діє сила 15 Н. Якої швидкості набуде тіло?',
+    question: 'На нерухоме тіло масою 5 кг протягом 4 секунд діє стала рівнодійна сил 15 Н. Якої швидкості набуде тіло?',
     given: [
       { label: 'm', value: '5 кг' },
       { label: 't', value: '4 с' },
@@ -385,7 +375,7 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'dynamics',
     numberInTopic: 18,
     title: 'Послідовне з\'єднання двох однакових пружин',
-    question: 'Дві однакові пружини жорсткістю 200 Н/м кожна з\'єднали послідовно. Чому дорівнює загальна жорсткість утвореної системи в Н/м?',
+    question: 'Дві однакові ідеальні пружини жорсткістю 200 Н/м кожна з\'єднали послідовно. Чому дорівнює загальна жорсткість утвореної системи в Н/м?',
     given: [
       { label: 'k₁ = k₂', value: '200 Н/м' },
       { label: 'з\'єднання', value: 'послідовне' },
@@ -406,7 +396,7 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'dynamics',
     numberInTopic: 19,
     title: 'Паралельне з\'єднання двох пружин',
-    question: 'Дві пружини жорсткістю 150 Н/м і 250 Н/м з\'єднали паралельно. Чому дорівнює загальна еквівалентна жорсткість?',
+    question: 'Дві ідеальні пружини з однаковим видовженням жорсткістю 150 Н/м і 250 Н/м з\'єднали паралельно. Чому дорівнює загальна еквівалентна жорсткість?',
     given: [
       { label: 'k₁', value: '150 Н/м' },
       { label: 'k₂', value: '250 Н/м' },
@@ -428,7 +418,7 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'dynamics',
     numberInTopic: 20,
     title: 'Гальмування до зупинки через силу тертя',
-    question: 'Автомобіль рухається зі швидкістю 15 м/с. Коефіцієнт тертя коліс об дорогу μ = 0.5. Скільки секунд триватиме гальмування до повної зупинки? (g = 10 м/с²).',
+    question: 'Автомобіль рухається горизонтальною дорогою зі швидкістю 15 м/с і гальмує із заблокованими колесами. Коефіцієнт тертя ковзання коліс об дорогу μ = 0.5. Іншими силами опору знехтуйте. Скільки секунд триватиме гальмування до повної зупинки? (g = 10 м/с²).',
     given: [
       { label: 'v₀', value: '15 м/с' },
       { label: 'μ', value: '0.5' },
@@ -437,7 +427,6 @@ export const DYNAMICS_PROBLEMS: PhysicsProblem[] = [
     find: 't_гальм',
     unit: 'с',
     expectedAnswer: 3,
-    acceptableAlternatives: [3.06],
     formula: 't = v₀ / (μ · g)',
     solutionSteps: [
       'Прискорення гальмування під дією сили тертя: a = μ · g = 0.5 · 10 = 5 м/с².',
