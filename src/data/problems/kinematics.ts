@@ -45,7 +45,7 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'kinematics',
     numberInTopic: 3,
     title: 'Прискорення тіла',
-    question: 'Автомобіль стартує зі стану спокою і за 6 с набуває швидкості 18 м/с. Чому дорівнює прискорення автомобіля?',
+    question: 'Автомобіль починає рівноприскорений прямолінійний рух зі стану спокою і за 6 с набуває швидкості 18 м/с. Чому дорівнює прискорення автомобіля?',
     given: [
       { label: 'v₀', value: '0 м/с' },
       { label: 'v', value: '18 м/с' },
@@ -89,7 +89,7 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'kinematics',
     numberInTopic: 5,
     title: 'Вільне падіння: час падіння',
-    question: 'Камінь падає без початкової швидкості з висоти 45 м. Скільки секунд триває падіння? (Вважайте g = 10 м/с²).',
+    question: 'Камінь вільно падає без початкової швидкості з висоти 45 м. Скільки секунд триває падіння? (Вважайте g = 10 м/с²).',
     given: [
       { label: 'h', value: '45 м' },
       { label: 'g', value: '10 м/с²' },
@@ -98,7 +98,6 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     find: 't',
     unit: 'с',
     expectedAnswer: 3,
-    acceptableAlternatives: [3.03],
     formula: 't = √(2h / g)',
     solutionSteps: [
       'Висота при вільному падінні: h = g · t² / 2.',
@@ -111,8 +110,8 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     id: 'kin_6',
     topicId: 'kinematics',
     numberInTopic: 6,
-    title: 'Швидкість при вільному падінні',
-    question: 'М\'яч кинули вертикально вгору з початковою швидкістю 25 м/с. Якої максимальної висоти досягне м\'яч? (Вважайте g = 10 м/с²).',
+    title: 'Максимальна висота підйому',
+    question: 'М\'яч кинули вертикально вгору з початковою швидкістю 25 м/с. На яку максимальну висоту відносно точки кидання підніметься м\'яч? (Опором повітря знехтуйте, g = 10 м/с²).',
     given: [
       { label: 'v₀', value: '25 м/с' },
       { label: 'g', value: '10 м/с²' },
@@ -120,7 +119,6 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     find: 'h_max',
     unit: 'м',
     expectedAnswer: 31.25,
-    acceptableAlternatives: [31.9, 31.3],
     formula: 'h_max = v₀² / (2g)',
     solutionSteps: [
       'У найвищій точці швидкість дорівнює нулю: v = 0.',
@@ -200,7 +198,7 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'kinematics',
     numberInTopic: 10,
     title: 'Період і частота обертання',
-    question: 'Колесо робить 120 обертів за 2 хвилини. Чому дорівнює період обертання колеса в секундах?',
+    question: 'Колесо рівномірно обертається і робить 120 обертів за 2 хвилини. Чому дорівнює період обертання колеса в секундах?',
     given: [
       { label: 'N', value: '120 обертів' },
       { label: 't', value: '2 хв = 120 с' },
@@ -284,7 +282,7 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'kinematics',
     numberInTopic: 14,
     title: 'Рух човна через річку',
-    question: 'Швидкість човна відносно води 4 м/с, а швидкість течії річки 3 м/с. Човен рухається перпендикулярно до течії. Яка швидкість човна відносно берега?',
+    question: 'Швидкість човна відносно води 4 м/с, а швидкість течії річки 3 м/с. Швидкість човна відносно води спрямована перпендикулярно до течії. Яка швидкість човна відносно берега?',
     given: [
       { label: 'v_ч', value: '4 м/с' },
       { label: 'v_т', value: '3 м/с' },
@@ -305,7 +303,7 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'kinematics',
     numberInTopic: 15,
     title: 'Шлях за n-ну секунду',
-    question: 'Тіло починає падати без початкової швидкості. Який шлях воно пролетить саме за третю секунду свого падіння? (Прийміть g = 10 м/с²).',
+    question: 'Тіло вільно падає без початкової швидкості й не досягає землі протягом перших трьох секунд. Який шлях воно пролетить саме за третю секунду свого падіння? (Прийміть g = 10 м/с²).',
     given: [
       { label: 'n', value: '3' },
       { label: 'g', value: '10 м/с²' },
@@ -314,7 +312,6 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     find: 'Δh₃',
     unit: 'м',
     expectedAnswer: 25,
-    acceptableAlternatives: [24.5],
     formula: 'Δh_n = g/2 · (2n - 1)',
     solutionSteps: [
       'Шлях за n-ну секунду: Δh = h(3) - h(2) = (g·3²)/2 - (g·2²)/2 = (10·9)/2 - (10·4)/2.',
@@ -328,7 +325,7 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'kinematics',
     numberInTopic: 16,
     title: 'Дальність польоту горизонтального кидка',
-    question: 'Камінь кинули горизонтально зі скелі заввишки 20 м зі швидкістю 15 м/с. На якій відстані від основи скелі впаде камінь? (Вважайте g = 10 м/с²).',
+    question: 'Камінь кинули горизонтально зі скелі заввишки 20 м зі швидкістю 15 м/с. На якій горизонтальній відстані від точки на рівні землі, розташованої вертикально під точкою кидання, впаде камінь? (Опором повітря знехтуйте, g = 10 м/с²).',
     given: [
       { label: 'h', value: '20 м' },
       { label: 'v₀', value: '15 м/с' },
@@ -358,7 +355,6 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     find: 'v',
     unit: 'м/с',
     expectedAnswer: 40,
-    acceptableAlternatives: [39.6],
     formula: 'v = √(2 · g · h)',
     solutionSteps: [
       'Формула кінцевої швидкості вільного падіння: v = √(2gh).',
@@ -372,7 +368,7 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     topicId: 'kinematics',
     numberInTopic: 18,
     title: 'Час підйому та повернення',
-    question: 'Стрілу випустили вертикально вгору зі швидкістю 30 м/с. Через скільки секунд вона повернеться на землю? (Опір повітря не враховувати, g = 10 м/с²).',
+    question: 'Стрілу випустили вертикально вгору з рівня землі зі швидкістю 30 м/с. Через скільки секунд вона повернеться на землю? (Опір повітря не враховувати, g = 10 м/с²).',
     given: [
       { label: 'v₀', value: '30 м/с' },
       { label: 'g', value: '10 м/с²' },
@@ -380,7 +376,6 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     find: 't_повн',
     unit: 'с',
     expectedAnswer: 6,
-    acceptableAlternatives: [6.12],
     formula: 't_повн = 2 · v₀ / g',
     solutionSteps: [
       'Час підйому до найвищої точки: t_під = v₀ / g = 30 / 10 = 3 с.',
@@ -393,7 +388,7 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
     id: 'kin_19',
     topicId: 'kinematics',
     numberInTopic: 19,
-    title: 'Кутова швидкість секундної стрілки',
+    title: 'Період обертання секундної стрілки',
     question: 'Визначте період обертання секундної стрілки годинника у секундах.',
     given: [{ label: '1 оберт секундної стрілки', value: '60 секунд' }],
     find: 'T',
@@ -426,6 +421,6 @@ export const KINEMATICS_PROBLEMS: PhysicsProblem[] = [
       'Швидкість: v(t) = 4 + 4t. При t = 3 с: v(3) = 4 + 4 · 3 = 16 м/с.',
     ],
     hint: 'Знайдіть похідну координати за часом: v(t) = x\'(t) = 4 + 4t.',
-    difficulty: 'підвищений',
+    difficulty: 'середній',
   },
 ];
