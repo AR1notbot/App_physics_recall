@@ -207,7 +207,7 @@ export const THERMODYNAMICS_PROBLEMS: PhysicsProblem[] = [
     expectedAnswer: 22.4,
     formula: 'V = ν · R · T / p',
     solutionSteps: [
-      'V = (1 · 8.314 · 273.15) / 101300 ≈ 2271.57 / 101300 ≈ 0.02241 м³ = 22.4 л.',
+      'V = (1 · 8.314 · 273.15) / 101300 ≈ 2270.97 / 101300 ≈ 0.02241 м³ = 22.4 л.',
     ],
     hint: 'Виразіть об’єм із рівняння pV = νRT, переведіть тиск у паскалі, а об’єм — у літри.',
     difficulty: 'середній',
